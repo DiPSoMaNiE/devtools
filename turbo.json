@@ -1,0 +1,38 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "globalEnv": ["NODE_ENV"],
+  "tasks": {
+    "build": {
+      "dependsOn": ["generate", "^generate"]
+    },
+    "dev": {
+      "dependsOn": ["generate", "^generate"],
+      "cache": false,
+      "persistent": true
+    },
+    "generate": {
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["generate", "^generate"],
+      "inputs": ["eslint.config.js", "**/*.js", "**/*.ts", "**/*.tsx"]
+    },
+    "setup": {
+      "cache": false
+    },
+    "start": {
+      "dependsOn": ["build"],
+      "cache": false,
+      "persistent": true
+    },
+    "test": {
+      "dependsOn": ["generate", "^generate"],
+      "inputs": ["jest.config.js", "src/**/*.ts", "src/**/*.tsx"]
+    },
+    "test:e2e": {
+      "cache": false
+    }
+  },
+  "ui": "tui"
+}

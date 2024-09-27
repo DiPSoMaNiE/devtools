@@ -5,6 +5,19 @@
   "workspaces": [
     "**"
   ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "generate": "turbo run generate",
+    "lint": "turbo run lint",
+    "setup": "turbo run setup",
+    "start": "turbo run start",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e"
+  },
+  "devDependencies": {
+    "turbo": "2.1.2"
+  },
   "packageManager": "yarn@4.5.0",
   "engines": {
     "node": "20.x"
