@@ -1,0 +1,12 @@
+{
+  "name": "@sportall/devtools",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "**"
+  ],
+  "packageManager": "yarn@4.5.0",
+  "engines": {
+    "node": "20.x"
+  }
+}
