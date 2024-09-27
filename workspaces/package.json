@@ -1,0 +1,13 @@
+{
+  "name": "@sportall/workspaces-config",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/workspaces.js"
+  },
+  "main": "src/root.js",
+  "devDependencies": {
+    "@sportall/eslint-config": "workspace:*",
+    "find-yarn-workspace-root": "2.0.0"
+  }
+}

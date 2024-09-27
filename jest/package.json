@@ -1,0 +1,24 @@
+{
+  "name": "@sportall/jest-config",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./next": "./src/jest-next.config.js",
+    "./react": "./src/jest-react.config.js",
+    "./react-native": "./src/jest-react-native.config.js"
+  },
+  "main": "src/index.js",
+  "devDependencies": {
+    "@sportall/eslint-config": "workspace:*",
+    "@swc/core": "1.7.28",
+    "@swc/jest": "0.2.36",
+    "@testing-library/jest-dom": "6.5.0",
+    "@types/jest": "29.5.13",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0"
+  },
+  "peerDependencies": {
+    "next": "15.x"
+  }
+}

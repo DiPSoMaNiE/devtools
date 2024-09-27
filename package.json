@@ -16,6 +16,12 @@
     "test:e2e": "turbo run test:e2e"
   },
   "devDependencies": {
+    "@sportall/eslint-config": "workspace:*",
+    "@sportall/git-config": "workspace:*",
+    "@sportall/jest-config": "workspace:*",
+    "@sportall/prettier-config": "workspace:*",
+    "@sportall/ts-config": "workspace:*",
+    "@sportall/workspaces-config": "workspace:*",
     "turbo": "2.1.2"
   },
   "packageManager": "yarn@4.5.0",

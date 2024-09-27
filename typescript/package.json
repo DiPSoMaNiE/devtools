@@ -1,0 +1,16 @@
+{
+  "name": "@sportall/ts-config",
+  "private": true,
+  "type": "module",
+  "main": "tsconfig.json",
+  "files": [
+    "tsconfig.json",
+    "next/tsconfig.json",
+    "react/tsconfig.json",
+    "react-native/tsconfig.json"
+  ],
+  "dependencies": {
+    "@types/node": "22.7.3",
+    "typescript": "5.6.2"
+  }
+}

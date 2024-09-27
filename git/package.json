@@ -1,0 +1,21 @@
+{
+  "name": "@sportall/git-config",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./commitlint": "./src/commitlint-base.config.js",
+    "./lint-staged": "./src/lint-staged-base.config.js"
+  },
+  "scripts": {
+    "husky": "cd ../.. && husky tooling/git/hooks && rm -rf .git/hooks && ln -s ../tooling/git/hooks .git/hooks",
+    "postinstall": "yarn run husky || true"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "19.5.0",
+    "@commitlint/config-conventional": "19.5.0",
+    "@commitlint/types": "19.5.0",
+    "@sportall/eslint-config": "workspace:*",
+    "husky": "9.1.6",
+    "lint-staged": "15.2.10"
+  }
+}

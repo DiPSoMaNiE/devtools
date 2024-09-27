@@ -1,0 +1,36 @@
+# See https://prettier.io/docs/en/ignore.html for more about ignoring files.
+
+# editors
+.idea/
+.vscode/
+
+# package manager
+node_modules/
+.pnp.*
+.yarn/*
+pnpm-lock.yaml
+yarn.lock
+
+# builds
+build/
+generated/
+out/
+dist/
+schema.graphql
+graphql-env.d.ts
+
+# releases
+CHANGELOG.MD
+
+# tests
+.coverage/
+
+# typescript
+*.tsbuildinfo
+
+# turbo
+.turbo/
+
+# misc
+.DS_Store
+*.pem
